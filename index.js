@@ -32,6 +32,8 @@ submitButton.addEventListener('click', function addTask() {
     additionTask(newTask, tasks.length)
     document.getElementById('addTaskName').value = ''
     tasks.push(newTask)
+    tasksLength += 1
+    totalTask()
   }else{
     window.alert('タスク名を入力してください！')
   }
