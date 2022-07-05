@@ -13,7 +13,7 @@ let doneTasksLength = 0
 // タスクの総件数表示
 totalTask()
 
-// 完了済みタスクの件数
+// 完了済みタスクの件数表示
 doneTask(0)
 
 // taskの初期表示
@@ -72,6 +72,7 @@ function changeStatus(event) {
   }
 }
 
+// タスク削除機能
 function deleteTask(event) {
   let targetId = event.target.id.split('-')[1]
   let row = document.getElementById(`row-${targetId}`)
